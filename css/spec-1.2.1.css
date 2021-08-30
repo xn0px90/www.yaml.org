@@ -6,15 +6,15 @@ body {
 }
 
 div.example pre.example {
-  background-color: #E0F8E0;
   border-style: ridge;
   width: 90%;
   padding: 0.25em;
 }
 
 pre.rule {
-  border-style: ridge;
+  border-style: ridge !important;
   width: 90%;
+  padding: 0.25em;
 }
 
 /* ----------------------------------------------------- */
