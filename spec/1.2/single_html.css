@@ -249,9 +249,3 @@ table.productionset a {
 a.preferred {
   font-style: italic;
 }
-
-/* 1.2.1 modifications */
-.main-content img {
-  width: 1000px;
-  max-width: 100%;
-}
