@@ -39,8 +39,8 @@ h6 {
   font-weight: bold;
 }
 
-#markdown-toc ul ul ul {
-  color: red;
+#markdown-toc ul ul ul ul {
+  display: none;
 }
 
 div.example pre.example {
