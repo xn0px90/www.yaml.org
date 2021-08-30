@@ -12,6 +12,11 @@ div.example pre.example {
   padding: 0.25em;
 }
 
+pre.rule {
+  border-style: ridge;
+  width: 90%;
+}
+
 /* ----------------------------------------------------- */
 
 div.abstract p.title,
