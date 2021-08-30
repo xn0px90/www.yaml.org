@@ -39,7 +39,7 @@ h6 {
   font-weight: bold;
 }
 
-#markdown-toc > ul > li > ul > li > ul {
+#markdown-toc ul ul ul ul {
   color: red;
 }
 
