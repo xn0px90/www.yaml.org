@@ -39,6 +39,10 @@ h6 {
   font-weight: bold;
 }
 
+.main-content img {
+  max-width: 100%;
+}
+
 #markdown-toc ul ul ul ul {
   display: none;
 }
