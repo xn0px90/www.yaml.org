@@ -17,6 +17,11 @@ pre.rule {
   padding: 0.25em;
 }
 
+td.side-by-side pre {
+  border-style: ridge !important;
+  padding: 0.25em;
+}
+
 /* ----------------------------------------------------- */
 
 div.abstract p.title,
