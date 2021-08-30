@@ -1,8 +1,46 @@
-
 body {
   font-family: sans-serif;
   background-color: #ffffff;
   color: #000000;
+}
+
+h1, h2, h3, h4, h5, h6  {
+  color: #005a9c;
+}
+
+h1 {
+  font-size: 170%;
+  font-style: normal;
+  font-weight: normal;
+}
+
+
+h2 {
+  font-size: 140%;
+  font-style: normal;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 120%;
+  font-style: normal;
+  font-weight: normal;
+}
+
+h5 {
+  font-size: 80%;
+  font-style: normal;
+  font-weight: bold;
+}
+
+h6 {
+  font-size: 60%;
+  font-style: normal;
+  font-weight: bold;
+}
+
+#markdown-toc > ul > li > ul > li > ul {
+  color: red;
 }
 
 div.example pre.example {
@@ -19,65 +57,5 @@ pre.rule {
 
 td.side-by-side pre {
   border-style: ridge !important;
-  padding: 0.25em;
-}
-
-/* ----------------------------------------------------- */
-
-div.abstract p.title,
-div.toc p,
-p.releaseinfo em,
-div.figure p.title,
-div.example p.title,
-span.term,
-h1, h2, h3, h4, h5, h6  {
-  color: #005a9c;
-}
-
-h1 {
-  font-size: 170%;
-  font-style: normal;
-  font-weight: normal;
-}
-
-
-div.abstract p.title,
-div.toc p,
-h2 {
-  font-size: 140%;
-  font-style: normal;
-  font-weight: normal;
-}
-
-h3 {
-  font-size: 120%;
-  font-style: normal;
-  font-weight: normal;
-}
-
-div.figure p.title,
-div.example p.title,
-span.term,
-h5 {
-  font-size: 80%;
-  font-style: normal;
-  font-weight: bold;
-}
-
-h6 {
-  font-size: 60%;
-  font-style: normal;
-  font-weight: bold;
-}
-
-div.toc p b,
-div.abstract p.title b {
-  font-weight: normal;
-}
-
-div.example pre {
-  background-color: #E0F8E0;
-  border-style: ridge;
-  width: 90%;
   padding: 0.25em;
 }
