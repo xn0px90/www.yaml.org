@@ -252,5 +252,6 @@ a.preferred {
 
 /* 1.2.1 modifications */
 .main-content img {
-  max-width: 75%;
+  width: 1000px;
+  max-width: 100%;
 }
