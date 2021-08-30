@@ -59,6 +59,10 @@ pre.rule {
   padding: 0.25em;
 }
 
+table {
+  width: 90% !important;
+}
+
 td.side-by-side pre {
   border-style: ridge !important;
   padding: 0.25em;
