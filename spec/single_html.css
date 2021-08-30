@@ -226,8 +226,3 @@ span.honorific > tt.literal {
 a.preferred {
   font-style: italic;
 }
-
-/* 1.2.1 modifications */
-.main-content img {
-  max-width: 100%;
-}
