@@ -4,9 +4,15 @@
 
 <script>if (window.location.protocol === "http:" && window.location.hostname === "yaml.org") { window.location.href = window.location.href.replace( "http:", "https:"); }</script>
 
-<title>YAML Ain’t Markup Language (YAML™) Version 1.2</title>
+<title>YAML Ain’t Markup Language (YAML™) revision 1.2.2</title>
 
 <meta charset="utf-8">
+
+<!-- Bootstrap 4 -->
+<link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+  integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+  crossorigin="anonymous" />
 
 <!-- "Theme" style sheet -->
 <link rel="stylesheet" type="text/css"
@@ -21,6 +27,7 @@
 </head>
 
 <body class="status-draft">
+<div class="container"><div class="row"><div class="col">
 
 <main id="content" class="main-content" role="main">
 <div class="wrapper">
@@ -29,22 +36,42 @@
 <h1 id="yaml-specification-changes">YAML Specification Changes</h1>
 
 <p>The current version of the YAML language is <strong>1.2</strong> and the current YAML
-specification version is <strong>1.2.2</strong>.</p>
+specification revision is <strong>1.2.2</strong>.</p>
 
-<h2 id="changes-in-v122-yyyy-mm-dd">Changes in v1.2.2 (YYYY-MM-DD)</h2>
+<h2 id="changes-in-revision-122-yyyy-mm-dd">Changes in revision 1.2.2 (YYYY-MM-DD)</h2>
 
 <ul>
-  <li>Host the YAML specification sources in a [public repository^]</li>
-  <li>Change the source format from DocBook to Markdown</li>
-  <li>Correct known errata from the previous specification</li>
-  <li>Address many [reported issues^]</li>
-  <li>Clarify wording and examples</li>
-  <li>Removed sentences that are no longer relevant in 2021</li>
-  <li>Fixed known bugs in the grammar productions</li>
-  <li>More TODO</li>
+  <li>Hosted the YAML specification sources in a publicly accessible
+repository<sup id="fnref:repo" role="doc-noteref"><a href="#fn:repo" class="footnote" rel="footnote">1</a></sup>.</li>
+  <li>Changed the source format from DocBook to Markdown in hopes of lowering the
+bar to entry for public contribution. Special processing lets us keep almost
+all the fancy things that were done by DocBook.</li>
+  <li>GNU make based system defaults to Docker containers for all processes where
+dependencies are not installed locally.</li>
+  <li>Hundreds of change commits<sup id="fnref:commits" role="doc-noteref"><a href="#fn:commits" class="footnote" rel="footnote">2</a></sup> submitted, reviewed and team approved as
+a GitHub pull request<sup id="fnref:pulls" role="doc-noteref"><a href="#fn:pulls" class="footnote" rel="footnote">3</a></sup>.</li>
+  <li>Corrected known errata from the previous specification.</li>
+  <li>Addressed many reported issues<sup id="fnref:issues" role="doc-noteref"><a href="#fn:issues" class="footnote" rel="footnote">4</a></sup>.</li>
+  <li>Clarified wording and examples.</li>
+  <li>Fixed all broken external links.</li>
+  <li>Images are now all generated from simple LaTeX files into SVG, requiring no
+proprietary drawing software.</li>
+  <li>Removed sentences that are no longer relevant in 2021.</li>
+  <li>Reworked many of the grammar productions to be clearer and not rely on
+instructional comments.</li>
+  <li>The names and numbers of all productions remain the same.</li>
+  <li>Added links to companion pages that can continually be updated with useful
+information that doesn’t fit into the spec or that would otherwise need to
+wait until the next revision.</li>
+  <li>Added footnote style links for links to external pages.</li>
+  <li>Included all older specs in the spec repo and converted the www.yaml.org
+build system to get spec pages from the yaml-spec repository.</li>
+  <li>Added new YAML logo favicon.</li>
+  <li>Added a test system to check formatting and spellng in Markdown files,
+general linting and also checking the build systems are working properly.</li>
 </ul>
 
-<h2 id="changes-in-v121-2009-10-01">Changes in v1.2.1 (2009-10-01)</h2>
+<h2 id="changes-in-revision-121-2009-10-01">Changes in revision 1.2.1 (2009-10-01)</h2>
 
 <p>Patches and error corrections:</p>
 
@@ -131,10 +158,11 @@ Baxter).</li>
 Baxter).</li>
 </ul>
 
-<h2 id="changes-in-v120-2009-07-21">Changes in v1.2.0 (2009-07-21)</h2>
+<h2 id="changes-in-version-12-revision-120-2009-07-21">Changes in version 1.2 (revision 1.2.0) (2009-07-21)</h2>
 
-<p>The core data schema is introduced as the recommended default, replacing the
-YAML 1.1 type library:</p>
+<p>The most significant difference between YAML 1.1 and YAML 1.2 is the
+introduction of the core data schema as the recommended default, replacing the
+YAML 1.1 type library.</p>
 
 <ul>
   <li>Only <code class="language-plaintext highlighter-rouge">true</code> and <code class="language-plaintext highlighter-rouge">false</code> strings are parsed as booleans (including <code class="language-plaintext highlighter-rouge">True</code> and
@@ -176,9 +204,10 @@ preceding document directives if they do not define their own.</li>
   <li>Explicit document-end marker is now always required before a directive.</li>
 </ul>
 
-<h2 id="changes-in-v11-2005-01-18">Changes in v1.1 (2005-01-18)</h2>
+<h2 id="changes-in-version-11-2005-01-18">Changes in version 1.1 (2005-01-18)</h2>
 
-<p>A complete refactoring of the tag syntax:</p>
+<p>The most significant difference between these versions is the complete
+refactoring of the tag syntax.</p>
 
 <ul>
   <li>The <code class="language-plaintext highlighter-rouge">%TAG</code> directive has been added, along with the <code class="language-plaintext highlighter-rouge">!foo!</code> tag prefix
@@ -192,8 +221,9 @@ application-specific tag.</li>
 requirement.</li>
 </ul>
 
-<p>The formal description of the language describing the document structure was
-completely refactored, while not changing its intent.
+<p>Additionally, the formal description of the language describing the document
+structure has been completely refactored between these versions, but the
+described intent has not changed.
 Other changes include:</p>
 
 <ul>
@@ -204,8 +234,28 @@ pre-existing <code class="language-plaintext highlighter-rouge">\t</code>.</li>
 between the name and its parameter/value.</li>
 </ul>
 
-<h2 id="first-published-as-v10-2004-01-29">First published as v1.0 (2004-01-29)</h2>
+<h2 id="first-published-as-version-10-2004-01-29">First published as version 1.0 (2004-01-29)</h2>
 
+<p>First release!</p>
+
+<h1 id="reference-links">Reference Links</h1>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:repo" role="doc-endnote">
+      <p><a href="https://github.com/yaml/yaml-spec">The YAML Specification Repository</a> <a href="#fnref:repo" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:commits" role="doc-endnote">
+      <p><a href="https://github.com/yaml/yaml-spec/commits/1.2.2">YAML Spec Repo Commits for 1.2.2</a> <a href="#fnref:commits" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:pulls" role="doc-endnote">
+      <p><a href="https://github.com/yaml/yaml-spec/pulls">YAML Spec Repo Pull Requests</a> <a href="#fnref:pulls" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:issues" role="doc-endnote">
+      <p><a href="https://github.com/yaml/yaml-spec/issues">YAML Spec Repo Issues</a> <a href="#fnref:issues" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
 
 
 </section>
@@ -213,5 +263,6 @@ between the name and its parameter/value.</li>
 </main>
 
 
+</div></div></div>
 </body>
 </html>
