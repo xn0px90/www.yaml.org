@@ -70,3 +70,7 @@ td.side-by-side pre {
   padding: 0.25em;
   margin: 0 5px;
 }
+
+code {
+  color: #000;
+}
